@@ -75,6 +75,9 @@
     right: 0px;
     width: 250px;
   }
+  .main-flex {
+    height: 70vh;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -84,7 +87,7 @@
   }
   .main-flex {
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
   }
 
@@ -107,14 +110,15 @@
     margin-top: 3rem;
     margin-right: auto;
   }
-}
-@media only screen and (max-width: 800px) {
   .gradient,
   .iphone {
     left: 0px;
   }
 
   .iphone {
-    left: -30px;
+    left: -40px;
+  }
+  .main-flex {
+    height: 100vh;
   }
 }

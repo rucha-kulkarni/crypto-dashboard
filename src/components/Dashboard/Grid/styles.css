@@ -134,3 +134,9 @@
 .current-price-red {
   color: var(--red) !important;
 }
+
+@media only screen and (max-width: 600px) {
+  .price-chip {
+    max-width: 55px;
+  }
+}
