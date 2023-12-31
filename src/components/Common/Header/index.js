@@ -16,14 +16,6 @@ function Header() {
     }
   }, []);
 
-  // useEffect(() => {
-  //   if (localStorage.getItem("theme") == "dark") {
-  //     setDark();
-  //   } else {
-  //     setLight();
-  //   }
-  // }, []);
-
   const changeMode = () => {
     if (localStorage.getItem("theme") != "dark") {
       setDark();
@@ -71,3 +63,5 @@ function Header() {
 }
 
 export default Header;
+
+

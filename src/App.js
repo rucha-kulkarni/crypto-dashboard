@@ -6,9 +6,6 @@ import Compare from "./pages/Compare";
 import Dashboard from "./pages/Dashboard";
 import Home from "./pages/Home";
 import Watchlist from "./pages/Watchlist";
-// import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-import { useEffect } from "react";
 
 function App() {
   const theme = createTheme({
@@ -18,10 +15,6 @@ function App() {
       },
     },
   });
-
-  var cursor;
-  var cursorPointer;
-
 
 
   return (
