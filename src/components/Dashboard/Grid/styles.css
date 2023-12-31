@@ -42,8 +42,9 @@
   border-radius: 50%;
   color: var(--green);
   padding: 0.5rem;
-  height: 1.5rem;
-  width: 1.5rem !important;
+  height: 1.2rem;
+  width: 1.2rem !important;
+  margin: 0 0 0 2rem;
 }
 
 .watchlist-icon-red {
@@ -90,6 +91,8 @@
   padding: 0.25rem 1rem;
   font-weight: 600;
   color: var(--green);
+  min-width: 65px;
+  text-align: center;
 }
 
 .price-chip:hover,

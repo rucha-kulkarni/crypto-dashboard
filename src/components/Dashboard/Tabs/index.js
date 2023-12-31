@@ -6,7 +6,6 @@ import TabPanel from "@mui/lab/TabPanel";
 import "./styles.css";
 import Grid from "../Grid";
 import List from "../List";
-import { convertNumber } from "../../../functions/convertNumber";
 import Button from "../../Common/Button";
 
 export default function TabsComponent({ coins, setSearch }) {
@@ -19,7 +18,7 @@ export default function TabsComponent({ coins, setSearch }) {
   const style = {
     color: "var(--white)",
     "& .Mui-selected": {
-      color: "var(--blue) !important",
+      color: "var(--coral) !important",
     },
     fontFamily: "Inter,sans-serif",
     fontWeight: 600,

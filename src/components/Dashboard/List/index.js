@@ -17,7 +17,7 @@ function List({ coin, delay }) {
     <a href={`/coin/${coin.id}`}>
       <motion.tr
         className="list-row"
-        initial={{ opacity: 0, x: -50 }}
+        initial={{ opacity: 0, x: 50 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5, delay: delay }}
       >

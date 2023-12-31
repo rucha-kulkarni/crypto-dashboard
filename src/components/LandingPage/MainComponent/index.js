@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "../../Common/Button";
 import "./styles.css";
-import gradient from "../../../assets/gradient.png";
+import gradient1 from "../../../assets/gradient1.png"; 
 import iphone from "../../../assets/iphone.png";
 import { motion } from "framer-motion";
 
@@ -46,7 +46,7 @@ function MainComponent() {
         </motion.div>
       </div>
       <div className="gradient-div">
-        <img src={gradient} className="gradient" />
+        <img src={gradient1} className="gradient" />
         <motion.img
           src={iphone}
           className="iphone"

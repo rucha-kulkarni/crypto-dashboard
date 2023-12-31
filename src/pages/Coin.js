@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Info from "../components/CoinPage/Info";
 import LineChart from "../components/CoinPage/LineChart";
+import PriceType from "../components/CoinPage/PriceType";
 import SelectDays from "../components/CoinPage/SelectDays";
-import ToggleComponents from "../components/CoinPage/ToggleComponent";
 import Button from "../components/Common/Button";
 import Header from "../components/Common/Header";
 import Loader from "../components/Common/Loader";
@@ -72,7 +72,7 @@ function Coin() {
           </div>
           <div className="grey-wrapper">
             <SelectDays handleDaysChange={handleDaysChange} days={days} />
-            <ToggleComponents
+            <PriceType
               priceType={priceType}
               handlePriceTypeChange={handlePriceTypeChange}
             />

@@ -8,15 +8,16 @@ export default function PaginationControlled({ page, handlePageChange }) {
       <Pagination
         sx={{
           "& .MuiPaginationItem-text": {
-            color: "#fff !important",
-            border: "1px solid var(--grey)",
+            color: "#7E7E7E !important",
+            border: "0px solid var(--grey)",
           },
           "& .MuiPaginationItem-text:hover": {
             backgroundColor: "transparent !important",
           },
-          "& .Mui-selected  ": {
-            backgroundColor: "var(--blue)",
-            borderColor: "var(--blue)",
+          "& .Mui-selected": {
+            backgroundColor: "var(--coral)",
+            borderColor: "var(--coral)",
+            color: "#fff!important",
           },
           "& .MuiPaginationItem-ellipsis": {
             border: "none",

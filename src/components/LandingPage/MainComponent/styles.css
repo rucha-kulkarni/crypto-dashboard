@@ -3,6 +3,7 @@
   justify-content: space-between;
   align-items: flex-start;
   padding: 1rem 3rem;
+  height: 80vh;
 }
 
 .heading1,
@@ -19,7 +20,7 @@
 }
 
 .heading2 {
-  color: var(--blue);
+  color: var(--coral);
 }
 
 .info-text {
@@ -44,6 +45,7 @@
   right: 0px;
   top: 80px;
   width: 250px;
+  border-radius: 30px;
 }
 .iphone {
   position: absolute;

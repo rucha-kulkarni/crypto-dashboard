@@ -1,13 +1,49 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700&display=swap");
 
+/*  
+blue=#FF6B6B
+Dodger Blue#3498db Alizarin Crimson#E74C3C
+
+Dark Sea Green#27AE60  Gold#FFD700
+
+Light Mode:
+Background: #F8F8F8
+Color Name: Ghost White
+
+Primary Text: #333333
+Color Name: Dim Gray
+
+Accent Color: #3498db
+Color Name: Dodger Blue
+
+Secondary Text: #777777
+Color Name: Light Slate Gray
+
+Dark Mode:
+Background: #1E1E1E
+Color Name: Black
+
+Primary Text: #FFFFFF
+Color Name: White
+
+Accent Color: #3498db
+Color Name: Dodger Blue
+
+Secondary Text: #AAAAAA
+Color Name: Dim Gray
+
+*/
+
+
 :root {
   --white: #fff;
   --black: #111;
   --blue: #3a80e9;
+  --coral:#FF6B6B;
   --grey: #888;
   --darkgrey: #1b1b1b;
   --green: #61c96f;
-  --red: #f94141;
+  --red: #e23232;
 }
 
 [data-theme="dark"] {
@@ -19,9 +55,9 @@
 
 [data-theme="light"] {
   --white: #111;
-  --black: #fff;
-  --grey: #888;
-  --darkgrey: #f3f3f3;
+  --black: #F9F9F9;
+  --grey: #6E6E6E;
+  --darkgrey:#F0F0F0;
 }
 
 html {
@@ -42,7 +78,7 @@ h1,h2,h3,h4,h5,h6,p,span {
 }
 
 ::selection {
-  background-color: var(--blue);
+  background-color: var(--coral);
   color: var(--white);
 }
 
@@ -55,7 +91,7 @@ h1,h2,h3,h4,h5,h6,p,span {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--blue);
+  background: var(--coral);
   border-radius: 10px;
 }
 
@@ -75,9 +111,9 @@ a {
   position: fixed;
   transform: translateX(-50%) translateY(-50%);
   pointer-events: none;
-  background-color: var(--blue);
+  background-color: var(--coral);
   z-index: 10000;
-  border: 2px solid var(--blue);
+  border: 2px solid var(--coral);
   height: 0.3rem;
   width: 0.3rem;
   border-radius: 50%;
@@ -91,7 +127,7 @@ a {
   background-color: transparent;
   border-radius: 50%;
   z-index: 10000;
-  border: 2px solid var(--blue);
+  border: 2px solid var(--coral);
   height: 2rem;
   width: 2rem;
   transition: all 400ms ease-out;

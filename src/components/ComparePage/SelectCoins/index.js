@@ -18,7 +18,7 @@ function SelectCoins({
     },
     "&:hover": {
       "&& fieldset": {
-        borderColor: "#3a80e9",
+        borderColor: "#FF6B6B",
       },
     },
   };

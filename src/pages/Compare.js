@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Info from "../components/CoinPage/Info";
 import LineChart from "../components/CoinPage/LineChart";
-import ToggleComponents from "../components/CoinPage/ToggleComponent";
+import PriceType from "../components/CoinPage/PriceType";
 import Header from "../components/Common/Header";
 import Loader from "../components/Common/Loader";
 import SelectCoins from "../components/ComparePage/SelectCoins";
@@ -115,11 +115,11 @@ function Compare() {
             <List coin={coin2Data} />
           </div>
           <div className="grey-wrapper">
-            <ToggleComponents
+            <PriceType
               priceType={priceType}
               handlePriceTypeChange={handlePriceTypeChange}
             />
-            <LineChart chartData={chartData} multiAxis={true} />
+            <LineChart chartData={chartData} priceType={priceType} multiAxis={true} />
           </div>
           <Info title={coin1Data.name} desc={coin1Data.desc} />
           <Info title={coin2Data.name} desc={coin2Data.desc} />

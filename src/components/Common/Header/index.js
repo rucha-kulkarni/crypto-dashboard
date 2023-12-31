@@ -38,7 +38,7 @@ function Header() {
   return (
     <div className="header">
       <h1>
-        CryptoTracker<span style={{ color: "var(--blue)" }}>.</span>
+        CryptoTracker<span style={{ color: "var(--coral)" }}>.</span>
       </h1>
       <div className="links">
         <Switch checked={darkMode} onClick={() => changeMode()} />
