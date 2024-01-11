@@ -6,6 +6,8 @@ import Compare from "./pages/Compare";
 import Dashboard from "./pages/Dashboard";
 import Home from "./pages/Home";
 import Watchlist from "./pages/Watchlist";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   const theme = createTheme({
@@ -19,6 +21,7 @@ function App() {
 
   return (
     <div className="App">
+      <ToastContainer />
       <ThemeProvider theme={theme}>
         <BrowserRouter>
           <Routes>

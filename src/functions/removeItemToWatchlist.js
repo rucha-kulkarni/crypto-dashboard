@@ -7,18 +7,18 @@ export const removeItemToWatchlist = (e, id, setIsCoinAdded) => {
     const newList = watchlist.filter((coin) => coin != id);
     setIsCoinAdded(false);
     localStorage.setItem("watchlist", JSON.stringify(newList));
-    // toast.success(
-    //   `${
-    //     id.substring(0, 1).toUpperCase() + id.substring(1)
-    //   } - has been removed!`
-    // );
+    toast.success(
+      `${
+        id.substring(0, 1).toUpperCase() + id.substring(1)
+      } - has been removed!`
+    );
     window.location.reload();
   } else {
-    // toast.error(
-    //   `${
-    //     id.substring(0, 1).toUpperCase() + id.substring(1)
-    //   } - could not be removed!`
-    // );
+    toast.error(
+      `${
+        id.substring(0, 1).toUpperCase() + id.substring(1)
+      } - could not be removed!`
+    );
     setIsCoinAdded(true);
   }
 };

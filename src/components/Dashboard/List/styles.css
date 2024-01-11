@@ -45,9 +45,6 @@
 }
 
 @media only screen and (max-width: 900px) {
-  .td-chip-icon {
-    display: none;
-  }
 
   .list-row td {
     font-size: 0.7rem;
@@ -75,9 +72,15 @@
     width: 6rem !important;
   }
 }
-@media only screen and (max-width: 600px) {
-  .td-marketCap,
+
+@media only screen and (max-width: 915px) {
   .td-chip-icon {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .td-marketCap {
     display: none !important;
   }
   .mobile {
