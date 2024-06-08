@@ -15,7 +15,7 @@ export default function PaginationControlled({ page, handlePageChange }) {
             backgroundColor: "transparent !important",
           },
           "& .Mui-selected": {
-            backgroundColor: "var(--coral)",
+            backgroundColor: "var(--coral) !important",
             borderColor: "var(--coral)",
             color: "#fff!important",
           },

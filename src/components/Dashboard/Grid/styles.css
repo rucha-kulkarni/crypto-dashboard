@@ -136,8 +136,17 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .brd {
+    max-width: 40px;
+    margin-right: 2px;
+    border: none !important;
+  }
   .price-chip {
-    max-width: 55px;
-    border: none;
+    padding: 0.25rem 0.3rem;
+  }
+  .watchlist-icon {
+    width: 0.8rem !important;
+    height: 0.8rem;
+    margin: 0 0 0 0.4rem;
   }
 }

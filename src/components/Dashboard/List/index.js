@@ -41,7 +41,7 @@ function List({ coin, delay }) {
           {coin.price_change_percentage_24h >= 0 ? (
             <td>
               <div className="chip-flex">
-                <div className="price-chip">
+                <div className="price-chip brd">
                   {coin.price_change_percentage_24h.toFixed(2)}%
                 </div>
                 <div className="chip-icon td-chip-icon">
@@ -52,7 +52,7 @@ function List({ coin, delay }) {
           ) : (
             <td>
               <div className="chip-flex">
-                <div className="price-chip red">
+                <div className="price-chip brd red">
                   {coin.price_change_percentage_24h.toFixed(2)}%
                 </div>
                 <div className="chip-icon td-chip-icon red">

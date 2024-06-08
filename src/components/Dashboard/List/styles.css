@@ -44,16 +44,13 @@
   display: none;
 }
 
-@media only screen and (max-width: 900px) {
-
-  .list-row td {
-    font-size: 0.7rem;
-  }
-
+@media only screen and (max-width: 1064px) {
   .td-totalVolume {
     display: none;
   }
+}
 
+@media only screen and (max-width: 900px) {
   .td-current-price {
     text-align: center !important;
   }
@@ -68,14 +65,19 @@
     width: 2rem;
   }
 
-  .td-info {
-    width: 6rem !important;
-  }
 }
 
 @media only screen and (max-width: 915px) {
   .td-chip-icon {
     display: none !important;
+  }
+  .list-row td,
+  .td-p {
+    font-size: 0.8rem !important;
+  }
+
+  .td-info {
+    width: 5rem !important;
   }
 }
 
@@ -85,7 +87,7 @@
   }
   .mobile {
     display: block !important;
-    text-align: left !important;
+    text-align: right !important;
   }
   .list-row td,
   .td-p {
@@ -100,4 +102,8 @@
     height: 2rem !important;
     width: 2rem !important;
   }
+  .list-row {
+    width: 100%;
+    padding: 0.5rem 0rem;
+}
 }
